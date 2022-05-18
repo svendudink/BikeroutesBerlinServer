@@ -7,7 +7,7 @@ router.get("/biking", (req, res, next) => {
   res.send({ msg: "test route" });
 });
 
-router.get("/user", getUserInfo);
+router.post("/", getUserInfo);
 
 router.get("/:user/:password", getSingleUserInfo);
 

@@ -1,11 +1,15 @@
 import express from "express";
 import userLoader from "./routes/userRoutes.js";
 import routesLoader from "./routes/userBikeRouteRoutes.js";
+import signupLoader from "./routes/singupRoutes.js";
 import mongoose from "mongoose";
 import * as dotenv from "dotenv";
 import cors from "cors";
-dotenv.config();
 import bodyParser from "body-parser";
+import passport from "passport";
+import passportConfig from "./config/passport.js";
+import { cloudinaryconfig } from "./config/cloudinary.js";
+dotenv.config();
 
 const app = express();
 app.use(bodyParser.json());
@@ -25,14 +29,41 @@ const corsOptions = {
   credentials: true,
 };
 app.use(cors(corsOptions));
+cloudinaryconfig();
+
+app.use(passport.initialize());
+passportConfig(passport);
 // Testing mongoose
 
 // end of testing mongoose
+
+//IIFE
 (async () => {
   await DataBaseConnect();
   //addMiddleware();
+  app.use("/signup", signupLoader);
   app.use("/routes", routesLoader);
-  app.use("/", userLoader);
+  app.use("/login", userLoader);
 })();
 
 app.listen(8080);
+
+// uploading pictures cloudinary
+// amazon s3 is scalable
+
+// install multer middleware,  // use filefilter ,, what is multer
+
+// import cloudinary
+
+//mongoose method findOne
+
+// hashPassword library convert to : bcrypt npm
+
+// verify all fields are filled
+
+// verify email with regex
+
+// verify password length and strength with regex
+
+// Second spike
+// JSON web token. to create webtoken
