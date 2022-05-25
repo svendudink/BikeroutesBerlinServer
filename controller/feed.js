@@ -4,26 +4,31 @@ import Bike from "../model/rides.js";
 
 const createPost = async (req, res, next) => {
   console.log(req.body);
-  await sendToMongo(
-    req.body.name,
-    req.body.latitude,
-    req.body.longitude,
-    req.body.dificulty
-  );
-  res.status(201).json({
-    message: "Post created successfully!",
-    post: { id: new Date().toISOString() },
-  });
+  console.log("req.file", req.files);
+  res.json(req.files);
+  // await sendToMongo(
+  //   req.body.name,
+  //   req.body.latitude,
+  //   req.body.longitude,
+  //   req.body.dificulty,
+  //   JSON.stringify(req.file)
+  // );
+  // res.status(201).json({
+  //   message: "Post created successfully!",
+  //   post: { id: new Date().toISOString() },
+  // });
 };
 
-const sendToMongo = async (name, latitude, longitude, dificulty) => {
+const sendToMongo = async (name, latitude, longitude, dificulty, file) => {
   const persona = new Bike({
     name: name,
     latitude: latitude,
     longitude: longitude,
     dificulty: dificulty,
+    file: file,
   });
   console.log("check if works", persona);
+  console.log(file);
   await persona.save();
 };
 

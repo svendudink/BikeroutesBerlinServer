@@ -19,6 +19,9 @@ const BikeSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  file: {
+    type: String,
+  },
 });
 
 const Bike = mongoose.model("Bikingroute", BikeSchema);

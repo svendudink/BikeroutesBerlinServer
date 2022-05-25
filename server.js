@@ -2,6 +2,7 @@ import express from "express";
 import userLoader from "./routes/userRoutes.js";
 import routesLoader from "./routes/userBikeRouteRoutes.js";
 import signupLoader from "./routes/singupRoutes.js";
+import profileLoader from "./routes/profileRoutes.js";
 import mongoose from "mongoose";
 import * as dotenv from "dotenv";
 import cors from "cors";
@@ -9,8 +10,9 @@ import bodyParser from "body-parser";
 import passport from "passport";
 import passportConfig from "./config/passport.js";
 import { cloudinaryconfig } from "./config/cloudinary.js";
+import { profile } from "console";
 dotenv.config();
-
+console.log("process.env.GC", process.env.GCS_KEYFILE);
 const app = express();
 app.use(bodyParser.json());
 
@@ -44,6 +46,7 @@ passportConfig(passport);
   app.use("/signup", signupLoader);
   app.use("/routes", routesLoader);
   app.use("/login", userLoader);
+  app.use("/profile", profileLoader);
 })();
 
 app.listen(8080);

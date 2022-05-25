@@ -14,9 +14,8 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  avatarPicture: {
+  file: {
     type: String,
-    required: false,
   },
 });
 

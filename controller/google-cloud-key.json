@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "berlinbiketours",
+  "private_key_id": "9246760a48590d1bdc79366ba1d7051d0f90c4cb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCvZYgJWCH9OE9y\nyqdSJJ41Xzc+ngEZQO67hHJYDN3eLmVtVFz7a5SVkkbQwPHcaBTEMFbL8EFFVn7x\nG/Ms2bwGiM1e/Az3EA3PwXryYbRs7/r0Une7g65zt4Y9yS47uOBO09zYoGH/bq89\nWIKYdt0MRLkIw0S1R/fTIyV46lLFQ8//Ell/OlvB0Ex5wjOYNS5P5UXY4eDoqui/\nMFKRSaj++FzrhplDtX9RfQh4l7Uv3PN73YfE+8piDB3sOCrplXSm414YmNNVtczp\nRBMQZmPhPHN8+H/UewiA/TIyDrmisPWVDhkO5glVgI6vQkPdkbLppALHAqOFHGx8\nJLO+D9wXAgMBAAECggEAD6rEEgGbV6EWB6zucTnwH9hXePJoKrdQG9Pi2tabYuNG\nEBP/Ej4z0YB1buQtNoDdigC/YAwf6G+neyYB/LmeP/8sSRW+mrsGYM5piwkLMsfk\n5LoRE+DZTmDQTuiPhqom7yOhkIATANwELziewbusVxI0bQH0OzUof+WdzUUxC4mz\nE/SwewG1ShYvA17TQoDZJGwlPisEt/DVFJmnns6W7SBdkkkVhhK7b99cmNaakmhC\nHsqCXmS+9IWBjkqfCU6M2US9TH2S+68FhGDZZxcqmxOMZvrsUGZZWRoXPRr9K5hG\nn0D6GEFn7rdw2vUPGgYLMiXZDVmPZVzJ9XpV/yDFoQKBgQDrX4j3vIbf873c4/v5\nI/LHHTI3lzFZAsyu+cjWSsHN6WoxhKLsJgBARS2ksVrJoNhAfBahmsd8KrdTnpdX\nBTF3wqnsJJUal04uODBaqQc48vLS5NiQ+c5uCb3pBi2EF1h1teKuqH1abROLYEcG\nsDzpTxY0FDnBLA4ucKRZghB66QKBgQC+xHSiaG650v4vJTfmm5zEM5ruUcVlOKBY\nfrQBMmfE4aJXt2ms+lzBsHDHkCwQ3ExOooPwtU6Sjj9yPQC3CHFc2EKakatoku+o\nVraVVZeX/BmL170h37fPOqkv17tThKKoTLBivKr4i5GtlCrQw81uX3jDoDdQxX/4\n2eXUtDk+/wKBgDhba6RF09WTuwZE4HRLEzpx1zBQV1SEwxWyYVBOHhF7rh2lMI1y\nm+THq6IfhSl6Bc2K6LBRKyqj37l546rGZ43RYnZUXA89405Vzd4nUr9kDJhKi0BL\nUA4w7vP4srVKEbg9kMVZOoqIS4G3z8neMPd8JEjb/ugt8EdWWUPFTMThAoGAKdff\nmWv8tYfBN0gbndqOJT8IgbOv74bfLOoFw6lxt26idEkHxehYhieUZUGLWNtpZWoi\nNJ8gL+dBpWYaDQuuCeZpnYvMJDDunmb+v3y5tp2WYOUeWBrBL5Q3XgYc0bHrF61S\nlyW4/rFmb8NrLMV1/vqz+3zeBTp82nG5BtHNKLMCgYAnp4wwDnD2KDZBBcC6BWb8\nJLZXxPPss72ro81rycvIhsf5B90hF6Ws5MCJqCvFw0phrsxWv8P1nbuHdNNRFl9i\nPzEdtldbPG38fUWcIgqwQ2jB6CJZSjsGp24VnjuYev6m7JpDD17o75RudUN3zEmZ\nVuHwg44KRKcLoIX/CKC7lw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "berlinbikeroutes@berlinbiketours.iam.gserviceaccount.com",
+  "client_id": "104981557384093227050",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/berlinbikeroutes%40berlinbiketours.iam.gserviceaccount.com"
+}
